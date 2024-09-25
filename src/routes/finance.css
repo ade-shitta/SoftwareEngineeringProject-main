@@ -1,0 +1,136 @@
+#finance-page-content {
+    max-width: inherit;
+    height: 100vh;
+    height: 79vh;
+    overflow: hidden;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 69.5% 29.5%;
+    column-gap: 1%;
+    grid-template-rows: 79% 19%;
+    row-gap: 2%;
+    padding-bottom: 120px;
+    grid-template-areas: 
+    " view inbox "
+    " modify inbox ";
+}
+
+#view-area {
+    grid-area: view;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+#inbox-area {
+    grid-area: inbox;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#modifiers {
+    grid-area: modify;
+}
+
+.finance-sections {
+    background-color: rgba(203, 197, 255, 0.4);
+    border-radius: 20px;
+}
+
+/* Inbox */
+#inbox-area h1 {
+    width: 100%;
+    min-height: 50px;
+    margin: 0;
+    text-align: center;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.inbox-messages-holder {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(10%));
+    grid-template-columns: 90%;
+    row-gap: 25px;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.inbox-messages {
+    background-color: white;
+    width: 90%;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#inbox-message-selected {
+    background-color: rgb(171, 237, 240);
+}
+
+.inbox-messages h1 {
+    color: black;
+}
+
+#inbox-profile-icon {
+    padding-left: 5%;
+    min-width: 50px;
+    width: 18%;
+    min-height: 30px;
+    height: 50%;
+}
+#inbox-view-icon {
+    padding-right: 10%;
+    min-width: 30px;
+    width: 10%;
+    min-height: 30px;
+    height: 20%;
+}
+
+#inbox-empty-msg {
+    margin: 0 auto;
+    color: rgba(192, 31, 31, 0.2);
+    font-size: 6em;
+    text-align: center;
+}
+
+/* Modifiers */
+#modifiers {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: space-between;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+.modifier-button {
+    max-width: 20em;
+    max-height: 30em;
+    border-radius: 1em;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+/* Timesheet Table */
+
+#timesheetViewTable {
+    max-width: 90%;
+    max-height: 90%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+#timesheetViewTable table {
+    max-width: 100%;
+}

@@ -1,0 +1,35 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: none;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.table-container {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #ffffff; 
+    border: none;
+    color: white;
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px; 
+    cursor: pointer;
+    border-radius: 8px;
+}

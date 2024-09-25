@@ -1,0 +1,213 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Container Styles */
+.container {
+  margin: 10em;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+/* Heading Styles */
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Form Fieldset Styles */
+fieldset {
+  border: solid 2px rgb(203, 197, 255);
+  border-radius: 2em;
+  padding: 2em;
+  width: 40%;
+  margin: auto;
+}
+
+/* Form Elements Styles */
+fieldset,
+#enter,
+label,
+input,
+legend {
+  background-color: rgb(203, 197, 255);
+}
+
+label {
+  font-size: 1.1em;
+}
+
+input {
+  background-color: rgb(255, 255, 255);
+  margin: 0.5em 0 2em 0;
+  padding: 1em;
+  border-radius: 0.5em;
+  border: solid 1px white;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+#enter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+legend {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Button Styles */
+.buttons {
+  background: white;
+  border-radius: 0.4em;
+  border: solid 1px white;
+  padding: 0.7em 0;
+  font-size: 1.1em;
+  width: 15%;
+  margin: auto;
+  margin-top: 1em;
+  transition-duration: 0.2s;
+}
+
+.buttons:hover {
+  background-color: green;
+  border: solid 1px black;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+/* Back Link Styles */
+#back {
+  text-align: center;
+  color: black;
+  font-weight: normal;
+}
+
+#back:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* Anchor Styles */
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: red;
+  transition-duration: 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+  transition-duration: 0.2s;
+}
+
+/* Footer Styles */
+#footer {
+  margin-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Overlay Styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-in forwards;
+}
+
+/* Keyframes for FadeIn Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Error Message Styles */
+.error-message {
+  background-color: #ffcccc;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ff0000;
+  position: relative;
+  animation: slideIn 0.3s ease-in-out forwards;
+  max-width: 300px;
+}
+
+/* Keyframes for SlideIn Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Close Button Styles */
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #ff0000;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  transition-duration: 0.2s;
+  background-color: #ffcccc;
+}
+
+/* Shake Animation Styles */
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Hover Effect for Signup Button */
+#signupButton:hover {
+  cursor: pointer;
+}

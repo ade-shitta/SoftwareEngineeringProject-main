@@ -1,0 +1,50 @@
+.footer {
+  background-color: rgb(246, 247, 250);
+  color: black;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.terms-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.terms-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.terms-container p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.terms-container a {
+  color: blue;
+  text-decoration: none;
+}
+
+.terms-container a:hover {
+  text-decoration: underline;
+}
